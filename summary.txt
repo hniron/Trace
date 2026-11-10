@@ -1,0 +1,55 @@
+total records: 228982784
+trace size: 7.33 GB
+kernel launches: 9327
+
+=== opcode distribution ===
+  LD.E                                 111,141,488  48.5%
+  LDG.E.EF.U16                          32,621,651  14.2%
+  LDG.E.U16.STRONG.SM                   32,621,566  14.2%
+  LDG.E.64                              17,219,181  7.5%
+  LDG.E.LTC128B.128                     16,318,080  7.1%
+  STG.E                                  4,918,357  2.1%
+  LDG.E                                  4,870,656  2.1%
+  LDG.E.U16                              2,231,624  1.0%
+  STG.E.U16                              2,220,820  1.0%
+  STG.E.64                               1,243,669  0.5%
+  LDG.E.128                                837,896  0.4%
+  LDG.E.U8                                 624,756  0.3%
+  LDG.E.CONSTANT                           375,504  0.2%
+  ATOMG.E.EXCH.STRONG.GPU                  356,456  0.2%
+  STG.E.U8                                 346,984  0.2%
+  STL                                      290,304  0.1%
+  STG.E.128                                232,256  0.1%
+  LDL.LU                                   170,496  0.1%
+  REDG.E.ADD.BF16x8.RN.STRONG.GPU           84,192  0.0%
+  LDL.LU.64                                 73,728  0.0%
+  STL.64                                    59,904  0.0%
+  LDL                                       32,256  0.0%
+  LDL.64                                    27,648  0.0%
+  LDG.E.LTC128B                             26,880  0.0%
+  LDG.E.U16.CONSTANT                        23,808  0.0%
+  LDG.E.ENL2.256.STRONG.GPU                  5,712  0.0%
+  LDG.E.EL.LTC256B.CONSTANT                  3,456  0.0%
+  LDG.E.128.CONSTANT                         1,680  0.0%
+  LDG.E.64.CONSTANT                          1,344  0.0%
+  ATOMG.E.INC.STRONG.GPU                       432  0.0%
+
+=== size distribution ===
+    1 B/thread       971,740  0.4%
+    2 B/thread    69,719,469  30.4%
+    4 B/thread   122,276,189  53.4%
+    8 B/thread    18,625,474  8.1%
+   16 B/thread    17,389,912  7.6%
+
+=== kernel class summary ===
+  GEMM                       147,457,948     27.19 GB  64.4%
+  GEMV                        65,429,733      4.19 GB  28.6%
+  Elementwise/Copy            10,288,434      1.29 GB  4.5%
+  LinearAttention(delta_rule)    4,450,203      0.99 GB  1.9%
+  FP4Convert                     638,112      0.05 GB  0.3%
+  Other                          336,901      0.05 GB  0.1%
+  KVCache                        156,830      0.03 GB  0.1%
+  Norm                           113,064      0.02 GB  0.0%
+  Reduce                          88,711      0.01 GB  0.0%
+  MoE                             20,832      0.00 GB  0.0%
+  Activation                       2,016      0.00 GB  0.0%
